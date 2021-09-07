@@ -1,4 +1,4 @@
-defmodule Ranking.ScorePrinter do
+defmodule Ranking.RankingPrinter do
   def print(filename) do
     File.stream!(filename)
     |> Stream.map(&String.trim/1)
@@ -38,7 +38,7 @@ defmodule Ranking.ScorePrinter do
   end
 
   defp print_score([%{mean: mean} | _], prev, rank, count)
-       when (mean < prev and count >= 10) or rank >= 10 do
+       when (mean < prev and count > 10) or rank > 10 do
   end
 
   defp print_score([%{id: id, mean: mean} | scores], nil, rank, count) do

@@ -11,5 +11,5 @@ $ mix ranking.test_data_generator test.csv
 ## 入出力
 
 ```sh
-$ mix ranking.score_printer test.csv
+$ mix ranking.ranking_printer test.csv
 ```
