@@ -1,4 +1,4 @@
-# 株式会社ゆめみのコーディング試験
+# 株式会社ゆめみさんのコーディング試験
 
 https://www.yumemi.co.jp/serverside_recruit
 
