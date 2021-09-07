@@ -1,4 +1,4 @@
-defmodule Ranking.Printer do
+defmodule Ranking.ScorePrinter do
   def print(filename) do
     File.stream!(filename)
     |> Stream.map(&String.trim/1)

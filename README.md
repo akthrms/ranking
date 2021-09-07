@@ -1,21 +1,15 @@
-# Ranking
+# 株式会社ゆめみのコーディング試験
 
-**TODO: Add description**
+https://www.yumemi.co.jp/serverside_recruit
 
-## Installation
+## テストデータ作成
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ranking` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:ranking, "~> 0.1.0"}
-  ]
-end
+```sh
+$ mix ranking.test_data_generator test.csv
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ranking](https://hexdocs.pm/ranking).
+## 入出力
 
+```sh
+$ mix ranking.score_printer test.csv
+```
